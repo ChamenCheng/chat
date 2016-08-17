@@ -18,5 +18,8 @@
   "homepage": "https://github.com/ChamenCheng/chat#readme",
   "dependencies": {
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.0"
   }
 }
