@@ -1,7 +1,8 @@
 html
     head
         title!= title
+        script(src='/javascripts/main.js')
     body
-        input(name='username', type='text')
-        input(name='password', type='password')
+        input(name='username', type='text', id='username')
+        input(name='password', type='password', id='password')
         button(name='submit', type='button', id='btn') 登录
