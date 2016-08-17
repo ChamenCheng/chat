@@ -1,2 +1,6 @@
 .git
 node_modules/
+
+#windows:
+Thumbs.db
+Desktop.ini
