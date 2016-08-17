@@ -10,11 +10,18 @@ app.use(bodyParser()); // 资源解析器
 app.use(methodOverride());
 app.use(express.static('public')); // 设置全局资源路径
 
-// 设置路由
+// 设置默认路由
 app.get('/', function(req, res) {
 	res.render('index', {
 		title: 'Home',
 		message: 'test'
+	});
+});
+
+// 设置登录路由
+app.get('/login', function(req, res) {
+	res.render('login', {
+		title: 'Login'
 	});
 });
 
