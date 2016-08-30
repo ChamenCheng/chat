@@ -8,4 +8,21 @@ router.get('/', function(req, res, next) {
 	});
 });
 
+router.get('/login', function(req, res) {
+	res.render('login', {
+		title: 'Login'
+	});
+});
+
+router.post('/login', function(req, res, next) {
+	alert(111);
+	console.log(req.username);
+	if (req.username === 'admin') {
+		req.session.username = username;
+		res.redirect('home');
+	} else {
+		req.session.error = '用户名不正确';
+	}
+});
+
 module.exports = router;
